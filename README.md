@@ -1,2 +1,2 @@
 # Ngangklung
-Ngangklung is an android application consisting about Angklung practice and education
+Aplikasi untuk mempelajari alat musik tradisional Angklung
