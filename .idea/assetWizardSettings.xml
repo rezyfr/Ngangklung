@@ -3,6 +3,11 @@
   <component name="WizardSettings">
     <option name="children">
       <map>
+        <entry key="imageWizard">
+          <value>
+            <PersistentState />
+          </value>
+        </entry>
         <entry key="vectorWizard">
           <value>
             <PersistentState>
@@ -15,9 +20,9 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="height" value="72" />
-                            <entry key="outputName" value="ic_btn_about" />
+                            <entry key="outputName" value="ic_btn_mainnada" />
                             <entry key="overrideSize" value="true" />
-                            <entry key="sourceFile" value="D:\UNPAD\Ngangklung\app\src\main\res\drawable\btn_about.svg" />
+                            <entry key="sourceFile" value="D:\UNPAD\Ngangklung\app\src\main\res\drawable\btn_mainnada.svg" />
                             <entry key="width" value="232" />
                           </map>
                         </option>
