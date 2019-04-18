@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class SplashScreen extends AppCompatActivity {
 
-    protected int _splashTime = 2500;
+    protected int _splashTime = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
