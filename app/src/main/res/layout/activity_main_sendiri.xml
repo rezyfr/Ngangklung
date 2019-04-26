@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSendiriActivity"
+    android:background="@drawable/asset_sisanya">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/ic_back"/>
+
+    <ImageView
+        android:id="@+id/ivDO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivBack"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:src="@drawable/asset_do" />
+
+    <ImageView
+        android:id="@+id/ivRE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivDO"
+        android:layout_alignBottom="@id/ivDO"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/asset_re" />
+
+    <ImageView
+        android:id="@+id/ivMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivRE"
+        android:layout_alignBottom="@id/ivRE"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/asset_mi" />
+
+    <ImageView
+        android:id="@+id/ivFA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivMI"
+        android:layout_alignBottom="@id/ivMI"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/asset_fa" />
+
+    <ImageView
+        android:id="@+id/ivSOL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivFA"
+        android:layout_alignBottom="@id/ivFA"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/asset_sol" />
+
+    <ImageView
+        android:id="@+id/ivLA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivSOL"
+        android:layout_alignBottom="@id/ivSOL"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/asset_la" />
+
+    <ImageView
+        android:id="@+id/ivSI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivLA"
+        android:layout_alignBottom="@id/ivLA"
+        android:layout_marginStart="36dp"
+        android:src="@drawable/asset_si" />
+
+</RelativeLayout>

@@ -171,12 +171,7 @@ public class NadaActivity extends AppCompatActivity {
         }
     });
 
-    private MediaPlayer.OnCompletionListener completionListener = new MediaPlayer.OnCompletionListener() {
-        @Override
-        public void onCompletion(MediaPlayer mediaPlayer) {
-            releaseMediaPlayer();
-        }
-    };
+    private MediaPlayer.OnCompletionListener completionListener = mediaPlayer -> releaseMediaPlayer();
 
     private void vibrate(){
         // Get instance of Vibrator from current Context

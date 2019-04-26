@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageButton btnAbout;
     @BindView(R.id.btnMainNada)
     ImageButton btnMainNada;
+    @BindView(R.id.btnPlayAlone)
+    ImageButton btnPlayAlone;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnAbout.setOnClickListener(this);
         btnMainNada.setOnClickListener(this);
+        btnPlayAlone.setOnClickListener(this);
 
     }
 
@@ -36,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnMainNada:
                 startActivity(new Intent(MainActivity.this, NadaActivity.class));
+                break;
+            case R.id.btnPlayAlone:
+                startActivity(new Intent(MainActivity.this, MainSendiriActivity.class));
                 break;
 
         }
