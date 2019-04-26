@@ -9,10 +9,12 @@ import android.widget.ImageButton;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     @BindView(R.id.btnAbout)
     ImageButton btnAbout;
+    @BindView(R.id.btnMainNada)
+    ImageButton btnMainNada;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        btnAbout.setOnClickListener((View v) -> startActivity(new Intent(MainActivity.this, AboutActivity.class)));
+        btnAbout.setOnClickListener(this);
+        btnMainNada.setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        ImageButton ib = (ImageButton) v;
+        switch (ib.getId()){
+            case R.id.btnAbout:
+                startActivity(new Intent(MainActivity.this, AboutActivity.class));
+                break;
+            case R.id.btnMainNada:
+                startActivity(new Intent(MainActivity.this, NadaActivity.class));
+                break;
+
+        }
     }
 }

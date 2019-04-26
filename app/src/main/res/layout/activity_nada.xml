@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".NadaActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/tvToolbar"
+            android:text="Mainkan Nada"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:fontFamily="@font/nunito_reg"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="64dp"
+            />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:text="@string/about_mainkan_nada"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/nunito_reg"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        />
+
+    <GridView
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvDesc"
+        android:gravity="center"
+        android:columnWidth="340dp"
+        android:numColumns="2"
+        android:verticalSpacing="6dp"
+        android:horizontalSpacing="6dp"/>
+
+</RelativeLayout>
