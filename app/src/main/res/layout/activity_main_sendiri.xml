@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/ivDO"
-        android:layout_alignBottom="@id/ivDO"
+        android:layout_marginTop="32dp"
         android:layout_marginStart="36dp"
         android:src="@drawable/asset_re" />
 
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/ivRE"
-        android:layout_alignBottom="@id/ivRE"
+        android:layout_marginTop="48dp"
         android:layout_marginStart="36dp"
         android:src="@drawable/asset_mi" />
 
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/ivMI"
-        android:layout_alignBottom="@id/ivMI"
+        android:layout_marginTop="64dp"
         android:layout_marginStart="36dp"
         android:src="@drawable/asset_fa" />
 
@@ -57,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/ivFA"
-        android:layout_alignBottom="@id/ivFA"
+        android:layout_marginTop="80dp"
         android:layout_marginStart="36dp"
         android:src="@drawable/asset_sol" />
 
@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/ivSOL"
-        android:layout_alignBottom="@id/ivSOL"
+        android:layout_marginTop="96dp"
         android:layout_marginStart="36dp"
         android:src="@drawable/asset_la" />
 
@@ -75,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toEndOf="@id/ivLA"
-        android:layout_alignBottom="@id/ivLA"
+        android:layout_marginTop="114dp"
         android:layout_marginStart="36dp"
         android:src="@drawable/asset_si" />
 

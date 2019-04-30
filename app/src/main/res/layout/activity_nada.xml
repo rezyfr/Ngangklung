@@ -53,9 +53,10 @@
         android:layout_height="match_parent"
         android:layout_below="@id/tvDesc"
         android:gravity="center"
-        android:columnWidth="340dp"
+        android:columnWidth="176dp"
+        android:stretchMode="columnWidth"
         android:numColumns="2"
-        android:verticalSpacing="6dp"
-        android:horizontalSpacing="6dp"/>
+        android:verticalSpacing="15dp"
+        android:horizontalSpacing="15dp"/>
 
 </RelativeLayout>

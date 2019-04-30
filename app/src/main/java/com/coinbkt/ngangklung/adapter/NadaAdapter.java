@@ -41,8 +41,7 @@ public class NadaAdapter extends BaseAdapter {
 
         if(convertView==null){
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(340, 200));
-            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            imageView.setScaleType(ImageView.ScaleType.CENTER);
         }
         else{
             imageView = (ImageView) convertView;

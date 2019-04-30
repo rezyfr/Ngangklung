@@ -3,6 +3,8 @@ package com.coinbkt.ngangklung;
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.os.Build;
+import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -178,7 +180,11 @@ public class NadaActivity extends AppCompatActivity {
         Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         // Vibrate for 600 milliseconds
-        v.vibrate(600);
+        if (Build.VERSION.SDK_INT >= 26) {
+            v.vibrate(VibrationEffect.createOneShot(600, 10));
+        } else {
+            v.vibrate(600);
+        }
     }
     private Nada[] nadas = {
             new Nada(R.drawable.card_do_unselected),
