@@ -33,7 +33,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".MainSendiriActivity"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape" />
+        <activity android:name=".ListAboutActivity"></activity>
     </application>
 
 </manifest>

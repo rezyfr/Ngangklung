@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ImageButton ib = (ImageButton) v;
         switch (ib.getId()){
             case R.id.btnAbout:
-                startActivity(new Intent(MainActivity.this, AboutActivity.class));
+                startActivity(new Intent(MainActivity.this, ListAboutActivity.class));
                 break;
             case R.id.btnMainNada:
                 startActivity(new Intent(MainActivity.this, NadaActivity.class));

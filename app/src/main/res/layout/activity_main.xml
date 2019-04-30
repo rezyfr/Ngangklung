@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/iconHome"
-        android:layout_width="116dp"
-        android:layout_height="188dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:src="@drawable/asset_iconhome"
         android:layout_centerHorizontal="true"/>
@@ -18,12 +18,10 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleX="1.9"
-        android:scaleY="1.9"
         android:src="@drawable/asset_angklung"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="150dp"
-        android:alpha="0.5"/>
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="-80dp"/>
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -33,30 +31,30 @@
         android:gravity="end"
         android:layout_below="@id/iconHome"
         android:layout_marginTop="64dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginRight="30dp">
 
         <ImageButton
             android:id="@+id/btnAbout"
-            android:layout_width="232dp"
-            android:layout_height="72dp"
-            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/btn_about"
             />
 
         <ImageButton
             android:id="@+id/btnMainNada"
-            android:layout_width="232dp"
-            android:layout_height="72dp"
-            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/btn_mainnada"
             android:layout_below="@id/btnAbout"
             />
 
         <ImageButton
             android:id="@+id/btnPlayAlone"
-            android:layout_width="232dp"
-            android:layout_height="72dp"
-            android:layout_marginBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/btn_playalone"
             android:layout_below="@id/btnMainNada"
             />

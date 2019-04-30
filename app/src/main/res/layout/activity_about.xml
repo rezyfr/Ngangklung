@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
-    tools:context=".AboutActivity">
+    tools:context=".ListAboutActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -30,75 +30,11 @@
 
     </android.support.v7.widget.Toolbar>
 
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:src="@drawable/asset_about"
-        android:id="@+id/ivAbout"
-        android:layout_below="@id/toolbar"/>
-
-    <ScrollView
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/ivAbout">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Angklung"
-                android:textColor="@color/textColor"
-                android:fontFamily="@font/nunito_bold"
-                android:textSize="14sp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="12dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/about_angklung"
-                android:fontFamily="@font/nunito_reg"
-                android:justificationMode="inter_word"
-                android:textSize="14sp"
-                android:textColor="@color/textColor"
-                android:layout_marginBottom="26dp"/>
-
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Asal Usul"
-                android:textSize="12sp"
-                android:textColor="@color/textColor"
-                android:fontFamily="@font/nunito_reg"
-                android:layout_marginBottom="4dp"
-                android:layout_gravity="left"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/asalusul_angklung"
-                android:fontFamily="@font/nunito_reg"
-                android:textColor="@color/textColor"
-                android:justificationMode="inter_word"
-                android:textSize="14sp"
-                android:layout_marginBottom="10dp"/>
-
-        </LinearLayout>
-
-
-    </ScrollView>
-
+        android:id="@+id/rv_about"
+        />
 
 </RelativeLayout>
